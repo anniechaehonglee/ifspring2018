@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,400,700');
+body{
+	font-family: 'Titillium Web', sans-serif;
+	margin: 0;
+	font-size: 20px;
+}
+#title{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+}
+#featuring{
+	margin-top: 0;
+	padding-left: 2em;
+	color: rgb(255, 255, 255);
+}
+#title:hover, #featuring:hover, .song:hover{
+	color: rgb(255, 99, 99);
+	font-style: italic;
+}
+.song{
+	font-weight: 200;
+	font-size: 0.9em;
+	line-height: 1.3em;
+	margin-bottom: 1em;
+}
+.artist{
+	font-weight: 400;
+	color: rgb(178, 226, 213);
+}
+.chorus{
+	font-style: italic;
+}
+.chorus:hover{
+	letter-spacing: 0.05em;
+}
+#video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+#lyrics_bg{
+	position: fixed;
+	margin: 25px;
+	padding: 10px;
+	overflow-y: scroll;
+	left: 55%;
+	width: 40%;
+	height:90%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 0;
+}
+#lyrics{
+	margin-left: 40px;
+	margin-bottom: 50px;
+	z-index: 100;
+	color: rgb(194, 194, 194);
+	font-weight: 200;
+}
+#on, #off{
+	position: fixed;
+	right: 49%;
+	bottom: 50%;
+	max-width: 30px;
+	max-height: 30px;
+	cursor: pointer;
+}
+#on{
+	z-index: 100;
+	opacity: 1;
+}
+#off{
+	z-index: -1;
+	opacity: 0;
+}
