@@ -27,7 +27,7 @@ img{
 .shows > * {
 	border-top: solid 3px rgb(180, 180, 180);
 }
-.selected{
+nav .selected{
 	font-weight: bold;
 	color: rgb(0, 0, 0);
 }
