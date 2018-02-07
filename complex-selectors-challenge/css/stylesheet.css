@@ -27,8 +27,10 @@ img{
 .shows > * {
 	border-top: solid 3px rgb(180, 180, 180);
 }
-nav ul li a.selected{
+nav > ul > li.selected{
 	font-weight: bold;
+}
+nav > ul > li.selected > a{
 	color: rgb(0, 0, 0);
 }
 .cast div{
