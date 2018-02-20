@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700italic,700');
+/* COLOR DEFINITIONS:
+ * Gardenia: f1ebe2
+ * Orchid Hush: cbc2d2
+ * Lettus Green: bed293
+ * Ultra Violet: 6c5e93
+ * Astral Aura: 3e3d53
+ */
+html {
+	font-family: 'Archivo Narrow';
+	color: #fcffff;
+	min-width: 1280px; 
+}
+/* intro section */
+#intro{
+	margin: 0;
+	height: 480px;
+	background: url('../imgs/cover.jpg');
+	background-size: 100%;
+	display: flex;
+	box-sizing: border-box;
+	text-shadow: 2px 2px 1px #393939;
+}
+#intro > .title{
+	margin: auto;
+}
+h1{
+	font-size: 5em;
+	margin: 0;
+}
+h3{
+	margin-top: 13px;
+	margin-bottom: 22px;
+	font-size: 1.88em;
+}
+
+/* first section */
+#section1{
+	height: 712px;
+	box-sizing: border-box;
+	padding: 45px 160px;
+	background-color: #cbc2d2;
+	color: #6d5d95;
+}
+.title{
+	text-align: center;
+	margin-bottom: 37px;
+}
+h2{
+	font-size: 2.5em;
+	margin:0;
+}
+#section1 > img{
+	width: 400px;
+	height: 300px;
+	background-color: rgb(238, 50, 90, 0.3);
+	float: right;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+p{
+	font-size: 1.1em;
+	line-height: 1.45em;
+	letter-spacing: 0.008em;
+}
+
+/* img section */
+#section2{
+	height: 690px;
+	box-sizing: border-box;
+	padding: 45px 160px;
+	background-color: #f1ebe2;
+	color: #F08080
+}
+.image{
+	width: 480px;
+	height: 175px;
+	box-sizing: border-box;
+	display: flex;
+}
+.image > img{
+	width: 200px;
+	height: 150px;
+	display: inline-block;
+}
+.img_descript{
+	display: inline-block;
+	width: 230px;
+	margin-top: 2px;
+	margin-left: 13px;
+}
+.img_descript p{
+	margin: 0 0 5px 0;
+}
+.img_title{
+	font-size: 1.2em;
+	font-weight: 700;
+}
+.col{
+	float: left;
+	width: 480px;
+	display: inline-block;
+}
+
+/* last section */
+#section3{
+	height: 400px;
+	box-sizing: border-box;
+	padding: 45px 0;			/* NOTE: REPEATED STYLE */
+	background-color: #bed293;
+	color: #f1ebe2;
+}
+#section3 p{
+	font-size: 1.6em;
+	line-height: 1.4em;
+	text-align: center;
+	margin: 0px 280px;
+}
+
+/* footer */
+footer{
+	height: 100px;
+	box-sizing: border-box;
+	padding: 42px 160px;
+	font-size: 1.1em;
+	background-color: #6c5e93;
+	color: #cbc2d2;
+}
