@@ -4,6 +4,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+a{
+	text-decoration: none;
+}
 #main_content {
 	margin: 40px;
 }
@@ -467,3 +470,120 @@ a#btn_moo:hover{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+a#btn_nbc img{
+	display: inline-block;
+	margin-top: 25%;
+	height: 50%;
+}
+a#btn_nbc img:hover{
+	animation: spinx 2s cubic-bezier(0.3, 0.5, 0.3, 0.9) forwards;
+}
+@keyframes spinx {
+	from { transform:rotateZ(0); }
+	to { transform:rotateZ(360deg); }
+}
+a#btn_nike img{
+	display: inline-block;
+	width: 50%;
+	padding-top:45%;
+	margin: auto;
+}
+a#btn_nike>span{
+	display:inline-block;
+	position:relative;
+	top: -28%;
+	width: 200px;
+	height: 50px;
+	z-index: -1;
+	font-family: "Helvetica", sans-serif;
+	font-weight: bold;
+	font-style: oblique;
+	font-size: 30px;
+	font-stretch: ultra-condensed;
+	text-decoration: none;
+	letter-spacing: -1px;
+	color: black;
+	opacity: 0;
+}
+a#btn_nike:hover>span{
+	animation: animateleft 0.4s forwards;
+}
+@keyframes animateleft{
+	from {
+		left:-300px;
+		opacity:0
+	}
+	to {
+		left:0;
+		opacity:1
+	}
+}
+a#btn_graden{
+	display: inline-block;
+	margin:auto;
+	margin-top: 100px;
+	padding: 8px 16px;
+	background-color: #fff;
+	color: #54865d;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: -1px;
+	line-height: 20px;
+}
+a#btn_graden:hover{
+	opacity: 100;
+	background: -webkit-linear-gradient(135deg, #ffa5ae 0%,#efe8c6 51%,#78b9c9 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+a#btn_tesla img{
+	display: inline-block;
+	margin-top: 25%;
+	height: 50%;
+	vertical-align: middle;
+}
+a#btn_run{
+	display: inline-block;
+	margin:auto;
+	margin-top: 100px;
+	padding: 8px 16px;
+	background-color: #fff;
+	color: black;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: -1px;
+	line-height: 20px;
+	transision: color 0.2s;
+}
+a#btn_run:hover>#the{
+	color: #ec008c;
+}
+a#btn_run:hover>#color{
+	color: #fff200;
+}
+a#btn_run:hover>#run{
+	color: #00aeef;
+}
+a#btn_pottermore img{
+	display: inline-block;
+	margin-top: 25%;
+	width: 50%;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**/
