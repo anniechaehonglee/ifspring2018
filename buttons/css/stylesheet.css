@@ -343,7 +343,7 @@ a#btn_samsung:hover~#oval{
 #oval{
 	display:inline-block;
 	position:relative;
-	top: -17%;
+	top: -15%;
 	width: 200px;
 	height: 50px;
 	z-index: -1;
@@ -543,6 +543,10 @@ a#btn_tesla img{
 	margin-top: 25%;
 	height: 50%;
 	vertical-align: middle;
+	transition: height 1s;
+}
+a#btn_tesla img:hover{
+	height: 55%;
 }
 a#btn_run{
 	display: inline-block;
@@ -571,18 +575,185 @@ a#btn_run:hover>#run{
 }
 a#btn_pottermore img{
 	display: inline-block;
-	margin-top: 25%;
+	margin-top: 30%;
+	width: 60%;
+	vertical-align: middle;
+	transition: transform 1s;
+}
+a#btn_pottermore img:hover{
+	transform: rotateZ(7deg);
+}
+a#btn_jog{
+	display:inline-block;
+	margin: auto;
+	padding-top: 40%;
+	font-family: "Yellowtail", cursive;
+	font-size: 30px;
+	font-stretch: ultra-condensed;
+	text-decoration: none;
+	color: #434924;
+	transition: color 0.5s;
+}
+a#btn_jog:hover{
+	color:rgb(112, 153, 112);
+	font-style:italic;
+	text-decoration: underline;
+}
+a#btn_hsn{
+	display:inline-block;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	border: #0076c8 solid 2px;
+	margin-top: calc(50% - 50px);
+	font-family: "Helvetica", sans-serif;
+	font-size: 30px;
+	padding-top: 28px;
+	font-stretch: ultra-condensed;
+	text-decoration: none;
+	color: #0076c8;
+	transition: color 0.5s, background-color 0.5s;
+}
+a#btn_hsn:hover{
+	color: #fff;
+	background-color: #0076c8;
+}
+a#btn_insta{
+	display: block;
+	margin: auto;
+	padding-top: -2px;
+	width: 80px;
+	height: 80px;
+	margin-top: 30%;
+	border-radius: 20px;
+	color: #f56040;
+	text-align: center;
+	font-size: 60px;
+	line-height: 1.3em;
+}
+a#btn_insta:hover{
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+	color: #fff;
+}
+a#btn_old{
+	display:inline-block;
+	margin: auto;
+	width: 160px;
+	height: 55px;
+	text-transform: uppercase;
+	border-radius: 50% / 50%;
+	margin-top: calc(50% - 25px);
+	padding-top: 5px;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #003763;
+}
+a#btn_old:hover{
+	background-color: #003763;
+	color: #fff;
+}
+a#btn_kitten{
+	display:inline-block;
+	margin: auto;
+	width: 135px;
+	height: 80px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	margin-top: calc(50% - 25px);
+	padding-top: 25px;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+}
+a#btn_kitten:hover{
+	animation: fire .65s ease-in-out infinite alternate;
+	background-color: #000;
+}
+@keyframes fire{
+0% {text-shadow: 0 0 10px #fefcc9,
+	5px -5px 15px #feec85,
+	-10px -10px 20px #ffae34,
+	10px -10px 15px #ec760c,
+	-10px -20px 20px #cd4606,
+	0 -20px 20px #973716,
+	5px -20px 20px #451b0e;
+	}
+100% {text-shadow: 0 0 10px #fefcc9,
+	5px -5px 15px #fefcc9,
+	-10px -10px 10px #feec85,
+	11px -21px 14px #ffae34,
+	-11px -20px 15px #ec760c,
+	0 -11px 20px #cd4606,
+	5px -20px 20px  #973716;
+	}
+}
+a#btn_ideo{
+	font-size: 30px;
+	letter-spacing: 0.2em;
+	padding-top: 70px;
+	display:inline-block;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	text-decoration: none;
+	transition: letter-spacing 0.5s;
+}
+.button_container#ideo{
+	position: relative;
+}
+div#btn_ideo_backdrop{
+	display: inline-block;
+	margin: auto;
+	width: 100px;
+	height: 20px;
+	transform: skew(-2deg, -2deg) translateY(45px);
+	position:relative;
+	left: -300px;
+	z-index: -1;
+	background-color: #e15925;
+
+}
+a#btn_ideo:hover{
+	letter-spacing: 0em;
+}
+a#btn_ideo:hover>div{
+	animation: animateleft 0.4s forwards;
+}
+a#btn_ibm img{
+	display: inline-block;
+	margin-top: 40%;
 	width: 50%;
 	vertical-align: middle;
+	filter: blur(10px);
+	transition: filter 0.5s;
 }
-
-
-
-
-
-
-
-
+a#btn_ibm img:hover{
+	filter: blur(0);
+}
+a#btn_plane{
+	display: block;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	border-radius: 50px;
+	margin: auto;
+	margin-top: 75px;
+	padding-top: 8px;
+	background-color: #232f3e;
+	color: #fff;
+	text-align: center;
+	font-size: 60px;
+}
+a#btn_plane:hover{
+	background-color: rgb(100, 149, 161);
+	transform: rotateZ(180deg);
+}
 
 
 
