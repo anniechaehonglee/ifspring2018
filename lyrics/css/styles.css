@@ -109,7 +109,7 @@ section {
 	transform: translateX(100px);
 }
 #lyrics{
-	z-index: 100;
+	z-index: 5;
 	color: rgb(194, 194, 194);
 	width: 500px;
 	background-color: rgba(0, 0, 0, 0.85);
@@ -123,6 +123,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.70);
+	cursor: pointer;
 }
 .song{
 	font-weight: 200;

@@ -154,10 +154,16 @@
 	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
 	<script>
+		var max = 10;
 		$(".pics").click(function(){
-			var z = parseInt($(this).css("z-index")) + 100;
+			var z = max + parseInt($(this).css("z-index")) + 10;
 			$(this).css("z-index", z);
 			console.log(z);
+			max = Math.max(max, z);
+		})
+		$("#lyrics").click(function(){
+			var z = parseInt($(this).css("z-index")) + max;
+			$(this).css("z-index", z);
 		})
 	</script>
 </body>
