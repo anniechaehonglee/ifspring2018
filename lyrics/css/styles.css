@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,400,700');
+body{
+	position: static;
+	background-color: rgb(27, 40, 48);
+	font-family: "source-han-serif-korean",serif;
+}
+section {
+	position: relative;
+}
+#container{
+	position: static;
+}
+#play{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 25px;
+	background-color: rgb(27, 40, 48);
+	z-index: 1000;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+#intro{
+	display: block;
+	position: relative;
+	height: 100vh;
+	background-color: rgb(224, 193, 111);
+}
+#intro > img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 500px;
+	transform: translate(-50%, -50%);
+}
+#intro div{
+	color: rgb(255, 255, 255);
+	position: absolute;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.50);
+}
+#intro div:nth-child(2){
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	font-size: 4em;
+	width: 700px;
+	cursor: pointer;
+}
+#intro div:nth-child(3){
+	top: 60%;
+	left: 50%;
+	font-size: 2em;
+	font-family: "kulturista-web",serif;
+	text-align: right;
+	transform: translateX(-90px);
+}
+#intro div:nth-child(4){
+	top: 10%;
+	left: 50%;
+	font-size: 4em;
+	transform: translateX(-400px);
+}
+#intro div:nth-child(5){
+	top: 20%;
+	right: 50%;
+	font-size: 2em;
+	text-align: right;
+	font-family: "kulturista-web",serif;
+	transform: translateX(330px);
+}
+#intro div:nth-child(6){
+	top: 70%;
+	right: 50%;
+	font-size: 3em;
+	transform: translateX(350px);
+}
+#main{
+	display: block;
+	height: 2150px;
+	background-image: url(../imgs/bg.jpg);
+}
+#main img{
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.70);
+	position: absolute;
+	cursor: pointer;
+	z-index: 0;
+}
+#main img:nth-child(1){
+	top: 350px;
+	right: 50%;
+	transform: translateX(-150px);
+}
+#main img:nth-child(2){
+	top: 750px;
+	left: 50%;
+}
+#main img:nth-child(3){
+	width: 300px;
+	top: 1200px;
+	right: 50%;
+	transform: translateX(-100px);
+}
+#main img:nth-child(4){
+	width: 300px;
+	top: 1700px;
+	left: 50%;
+	transform: translateX(100px);
+}
+#lyrics{
+	z-index: 100;
+	color: rgb(194, 194, 194);
+	width: 500px;
+	background-color: rgba(0, 0, 0, 0.85);
+	font-weight: 200;
+	margin-bottom: 150px;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	padding: 3% 0;
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.70);
+}
+.song{
+	font-weight: 200;
+	font-size: 0.9em;
+	line-height: 1.3em;
+	margin-bottom: 1em;
+}
+.song:hover{
+	color: rgb(245, 233, 181);
+	font-style: italic;
+}
+.artist{
+	font-weight: 400;
+	color: rgb(178, 226, 213);
+}
+.chorus{
+	font-style: italic;
+}
+.chorus:hover{
+	letter-spacing: 0.05em;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+#footer{
+	display: block;
+	position: static;
+	padding-top: 100px;
+	height: 400px;
+	background-color: rgb(224, 193, 111);
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.50);
+}
+#footer > p{
+	margin-bottom: 40px;
+}
+#suggestion img{
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	clip-path: circle(50px at center);
+	cursor: pointer;
+}
+#suggestion img:hover{
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+    10% { transform: translate(-0.5px, -1px) rotate(-0.5deg); }
+    20% { transform: translate(-1.5px, 0px) rotate(0.5deg); }
+    30% { transform: translate(1.5px, 1px) rotate(0deg); }
+    40% { transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+    50% { transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+    60% { transform: translate(-1.5px, 0.5px) rotate(0deg); }
+    70% { transform: translate(1.5px, 0.5px) rotate(-0.5deg); }
+    80% { transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+    90% { transform: translate(0.5px, 1px) rotate(0deg); }
+    100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
+}
