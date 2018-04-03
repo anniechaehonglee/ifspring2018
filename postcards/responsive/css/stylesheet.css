@@ -1,85 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:500,700');
-*{
-	font-family: 'Quicksand', sans-serif;
-	color: rgb(45, 45, 45);
+p{
+	width: 100%;
+	color: red;
+	max-width: 1000px;
 }
-a#next{
-	position: absolute;
-	display: block;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 100;
-}
-.quote{
-	position: absolute;
-	text-align: right;
-	right: 15%;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 40%;
-	text-shadow: 3px 3px 17px rgba(150, 150, 150, 0.7);
-}
-p:first-child{
-	font-size: 3rem;
-	margin-bottom: 0.5rem;
-	padding-bottom: 0;
-}
-p:nth-child(2){
-	font-size: 1.5rem;
-	color: rgb(75, 75, 75);
-	margin-top: 0;
-	padding-top: 0;
-}
-img{
-	position: absolute;
-	bottom: 10%;
-	left: 10%;
-	height: 80%;
-}
-#love{
-	background: rgb(245, 220, 220);
-}
-#love p:first-child{
-}
-#love p:nth-child(2){
-}
-#life{
-	background: rgb(194, 214, 221);
-}
-#life p:first-child{
-}
-#life p:nth-child(2){
-}
-#smile{
-	background: rgb(244, 236, 205);
-}
-#smile p:first-child{
-}
-#smile p:nth-child(2){
-}
-@media screen and (max-width: 480px) {
-	.quote{
-		text-align: center !important;
-		top: 10% !important;
-		left: 10% !important;
-		right: 10% !important;
-		width: 80% !important;
-		bottom: auto !important;
-		transform: none !important;
-	}
-	p:first-child{
-		font-size: 2rem !important;
-	}
-	p:nth-child(2){
-		font-size: 1rem !important;
-	}
-	img{
-		width: 70%;
-		height: auto;
-		bottom: 10%;
-		left: auto;
-		margin: 0px 15%;
+
+/* @media screen and (max-width: 1024px){
+	p{
+		color: green;
 	}
 }
+@media screen and (max-width: 450px) {
+	p{
+		padding: 0 10% 0 10%;
+		color: blue;
+	}
+} */
