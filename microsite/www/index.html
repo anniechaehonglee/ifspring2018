@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frida Kahlo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<style>
+		#index .container{
+			width: 80%;
+			margin: auto;
+		}
+		#index .element{
+			width: 50%;
+			margin-bottom: 0;
+			vertical-align: bottom;
+		}
+		#index img{
+			width: 70%;
+			margin-left: 10%;
+		}
+		#index h1{
+			text-align: right;
+			font-size: 5rem;
+			margin: 0;
+			padding: 0;
+		}
+		#index h2{
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			font-size: 3rem;
+			font-weight: 400;
+			color: rgb(116, 116, 116);
+		}
+		#index p{
+			font-family: 'Montserrat', sans-serif !important;
+			font-weight: 400;
+			text-align: center;
+			margin: 0;
+		}
+		#index #carrot{
+			transform: rotate(180deg);
+		}
+		#learnmore{
+			position: absolute;
+			bottom: 10%;
+			left: 50%;
+			transform: translate(-50%);
+			color: rgb(189, 189, 189);
+			animation: appear 1s linear 2s infinite fowards;
+		}
+		@keyframes appear {
+			from {opacity: 0%;}
+			to {opacity: 100%;}
+		}
+	</style>
+</head>
+<body id="index">
+	<div class="container">
+		<div class="element">
+			<h1>Frida Kahlo</h1>
+			<h2>Understanding Frida then and now</h2>
+		</div><!--
+		--><div class="element">
+		<img src="imgs/index.jpg" />
+	</div>
+
+</div>
+<div id="learnmore">
+	<a href="home.html">
+		<p>Learn More</p>
+		<p id="carrot">^</p>
+	</a>
+</div>
+</body>
+</html>

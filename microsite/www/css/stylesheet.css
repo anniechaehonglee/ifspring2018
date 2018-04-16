@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,600');
+html, body{
+	font-family: 'PT Serif', serif;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+body{
+	margin-top: 12vh;
+}
+#index{ background-color: rgb(235, 243, 246);}
+#home{ background-color: rgb(222, 241, 225);}
+#bio{ background-color: rgb(255, 254, 235);}
+#paint{ background-color: rgb(249, 234, 234);}
+#modern{ background-color: rgb(237, 243, 249);}
+.content{
+	width: 75vw;
+}
+.container{
+	display: flex;
+	flex-grow: row;
+	margin: auto;
+}
+.element{
+	margin: auto;
+}
+h1{
+	font-size: 4rem;
+	margin: 0;
+}
+p{
+	font-family: 'Source Sans Pro', sans-serif !important;
+}
+#menu{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: space-around;
+	padding: auto;
+}
+#menu span{
+	margin: auto;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: 200;
+	text-transform: uppercase;
+	color: rgb(89, 89, 89);
+}
+#menu span.selected{
+	font-weight: 400;
+}
