@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frida Kahlo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<style>
+		.rowcontainer{
+			display: flex;
+			flex-direction: column;
+		}
+		.colcontainer{
+			margin: auto;
+			display: flex;
+			flex-direction: row;
+		}
+		.element{
+			margin: auto;
+			width: 30%;
+			min-width: 150px;
+		}
+		img{
+			width: 100%;
+		}
+	</style>
+</head>
+<body id="paint">
+	<div class="content">
+		<h1>Paintings</h1>
+		<div class="rowcontainter">
+			<div class="colcontainer">
+				<div class="element">
+					<img src="imgs/1.jpg" />
+				</div>
+				<div class="element">
+					<img src="imgs/2.jpg" />
+				</div>
+				<div class="element">
+					<img src="imgs/3.jpg" />
+				</div>
+			</div>
+			<div class="colcontainer">
+				<div class="element">
+					<img src="imgs/4.jpg" />
+				</div>
+				<div class="element">
+					<img src="imgs/5.jpg" />
+				</div>
+				<div class="element">
+					<img src="imgs/6.jpg" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="menu">
+		<div>
+			<span><a href="home.html">Home</a></span>
+			<span><a href="bio.html">Biography</a></span>
+			<span class="selected" id="paint_menu"><a href="paint.html">Paintings</a></span>
+			<span><a href="modern.html">Modern Day</a></span>
+		</div>
+	</div>
+</body>
+</html>
