@@ -14,6 +14,7 @@
 		left: 50%;
 		transform: translate(-50%, -60%);
 		animation: pulldown 1.5s;
+		min-width: 1024px;
 	}
 	@keyframes pulldown{
 		from{
@@ -60,19 +61,44 @@
 		bottom: 10%;
 		left: 50%;
 		transform: translate(-50%);
-		color: rgb(189, 189, 189);
+		color: rgb(153, 151, 151);
 		opacity: 0;
-		text-shadow: 4px 4px 12px rgba(150, 150, 150, 0.42);
+		text-shadow: 4px 4px 12px rgba(150, 150, 150, 0.5);
 		animation: fadein 2.5s;
 		animation-delay: 1s;
 		animation-fill-mode: forwards;
 	}
 	#learnmore:hover{
-		text-shadow: 4px 4px 12px rgba(65, 65, 65, 0.42);
+		text-shadow: 4px 4px 12px rgba(65, 65, 65, 0.6);
 	}
 	@keyframes fadein {
 		from { opacity: 0; }
 		to   { opacity: 1; }
+	}
+	@media screen and (max-width: 900px){
+		#index .container{
+			display: flex;
+			flex-direction: column;
+		}
+		#index .element{
+			margin: auto;
+			width: 50%;
+		}
+		#index .element>h1{
+			text-align: center;
+			font-size: 3rem;
+		}
+		#index .element>h2{
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 400;
+			margin-bottom: 20px;
+		}
+		#index .element>img{
+			margin: auto;
+			width: 60%;
+			display: block;
+		}
 	}
 	</style>
 </head>
@@ -83,7 +109,7 @@
 			<h2>Understanding Frida then and now</h2>
 		</div><!--
 		--><div class="element">
-		<img src="imgs/index.jpg" />
+			<img src="imgs/index.jpg" />
 		</div>
 	</div>
 	<div id="learnmore">

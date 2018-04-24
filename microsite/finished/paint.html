@@ -9,6 +9,7 @@
 		.rowcontainer{
 			display: flex;
 			flex-direction: column;
+			padding-bottom: 50px;
 		}
 		.colcontainer{
 			margin: auto;
@@ -16,39 +17,58 @@
 			flex-direction: row;
 		}
 		.element{
-			margin: auto;
+			margin: 20px;
 			width: 30%;
 			min-width: 150px;
 		}
 		img{
 			width: 100%;
+			min-width: 150px;
 		}
 	</style>
 </head>
 <body id="paint">
 	<div class="content">
 		<h1>Paintings</h1>
-		<div class="rowcontainter">
+		<div class="rowcontainer">
 			<div class="colcontainer">
-				<div class="element">
-					<img src="imgs/1.jpg" />
+				<div class="element imgcontainer">
+				  <img src="imgs/1.jpg" class="image">
+				  <div class="overlay">
+				    <div class="text">A Few Small Nips Passionately in Love (1935)</div>
+				  </div>
 				</div>
-				<div class="element">
-					<img src="imgs/2.jpg" />
+				<div class="element imgcontainer">
+				  <img src="imgs/2.jpg" class="image">
+				  <div class="overlay">
+				    <div class="text">Diego and I (1949)</div>
+				  </div>
 				</div>
-				<div class="element">
-					<img src="imgs/3.jpg" />
+				<div class="element imgcontainer">
+				  <img src="imgs/3.jpg" class="image">
+				  <div class="overlay">
+				    <div class="text">Four Inhabitants of Mexico (1938)</div>
+				  </div>
 				</div>
 			</div>
 			<div class="colcontainer">
-				<div class="element">
-					<img src="imgs/4.jpg" />
+				<div class="element imgcontainer">
+				  <img src="imgs/4.jpg" class="image">
+				  <div class="overlay">
+				    <div class="text">Girl with Death Mask (1938)</div>
+				  </div>
 				</div>
-				<div class="element">
-					<img src="imgs/5.jpg" />
+				<div class="element imgcontainer">
+				  <img src="imgs/5.jpg" class="image">
+				  <div class="overlay">
+				    <div class="text">Portrait of Frida's Family (1949–1950)</div>
+				  </div>
 				</div>
-				<div class="element">
-					<img src="imgs/6.jpg" />
+				<div class="element imgcontainer">
+				  <img src="imgs/6.jpg" class="image">
+				  <div class="overlay">
+				    <div class="text">Self Portrait the Frame (1938)</div>
+				  </div>
 				</div>
 			</div>
 		</div>
