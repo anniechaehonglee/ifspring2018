@@ -6,79 +6,89 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<style>
-		.rowcontainer{
-			display: flex;
-			flex-direction: column;
-			padding-bottom: 50px;
-		}
-		.colcontainer{
-			margin: auto;
-			display: flex;
-			flex-direction: row;
-		}
-		.element{
-			margin: 20px;
-			width: 30%;
-			min-width: 150px;
-		}
-		img{
-			width: 100%;
-			min-width: 150px;
-		}
+	.flexcontainer {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-flex-flow: row wrap;
+		justify-content: space-around;
+	}
+	.element{
+		width: 30%;
+		margin: 20px 0;
+		min-width: 150px;
+	}
+	img{
+		width: 100%;
+		min-width: 150px;
+	}
 	</style>
 </head>
 <body id="paint">
-	<div class="content">
-		<h1>Paintings</h1>
-		<div class="rowcontainer">
-			<div class="colcontainer">
-				<div class="element imgcontainer">
-				  <img src="imgs/1.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">A Few Small Nips Passionately in Love (1935)</div>
-				  </div>
-				</div>
-				<div class="element imgcontainer">
-				  <img src="imgs/2.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Diego and I (1949)</div>
-				  </div>
-				</div>
-				<div class="element imgcontainer">
-				  <img src="imgs/3.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Four Inhabitants of Mexico (1938)</div>
-				  </div>
-				</div>
-			</div>
-			<div class="colcontainer">
-				<div class="element imgcontainer">
-				  <img src="imgs/4.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Girl with Death Mask (1938)</div>
-				  </div>
-				</div>
-				<div class="element imgcontainer">
-				  <img src="imgs/5.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Portrait of Frida's Family (1949–1950)</div>
-				  </div>
-				</div>
-				<div class="element imgcontainer">
-				  <img src="imgs/6.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Self Portrait the Frame (1938)</div>
-				  </div>
-				</div>
-			</div>
-		</div>
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<div id="navbar">
+		<a href="home.html">MAIN</a>
+		<a href="bio.html">BIOGRAPHY</a>
+		<a href="paint.html">PAINTING</a>
+		<a href="modern.html">MODERN DAYS</a>
 	</div>
-	<div id="menu">
-		<div>
-			<span><a href="home.html">Home</a></span>
-			<span><a href="bio.html">Biography</a></span>
-			<span class="selected" id="paint_menu"><a href="paint.html">Paintings</a></span>
-			<span><a href="modern.html">Modern Day</a></span>
+	<div class="menu" id="home_">
+		<a href="home.html">FRIDA KAHLO</a>
+	</div>
+	<div class="menu" id="bio_">
+		<a href="bio.html">BIOGRAPHY</a>
+	</div>
+	<div class="menu selected" id="paint_">
+		<a href="paint.html">PAINTING</a>
+	</div>
+	<div class="menu" id="modern_">
+		<a href="modern.html">MODERN DAYS</a>
+	</div>
+	<div class="content">
+		<div class="flexcontainer">
+			<div class="element flexitem  imgcontainer">
+				<img src="imgs/1.jpg" class="image">
+				<div class="overlay">
+					<div class="text">A Few Small Nips Passionately in Love (1935)</div>
+				</div>
+			</div>
+			<div class="element flexitem  imgcontainer">
+				<img src="imgs/2.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Diego and I (1949)</div>
+				</div>
+			</div>
+			<div class="element flexitem  imgcontainer">
+				<img src="imgs/3.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Four Inhabitants of Mexico (1938)</div>
+				</div>
+			</div>
+			<div class="element flexitem  imgcontainer">
+				<img src="imgs/4.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Girl with Death Mask (1938)</div>
+				</div>
+			</div>
+			<div class="element flexitem  imgcontainer">
+				<img src="imgs/5.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Portrait of Frida's Family (1949–1950)</div>
+				</div>
+			</div>
+			<div class="element flexitem  imgcontainer">
+				<img src="imgs/6.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Self Portrait the Frame (1938)</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

@@ -6,116 +6,114 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<style>
-		.container{
-			display: block;
-		}
-		.emph{
-			color: rgb(122, 122, 122);
-			font-size: 1.5rem;
-			font-style: italic;
-			margin: 2rem 0 2rem 0;
-		}
-		img{
-			display: inline-block;
-			margin: auto;
-			min-width: 150px;
-			max-width: 300px;
-		}
-		.rowcontainer{
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			flex-flow: wrap;
-		}
-		#modern>.content>div{
-			padding-bottom: 50px;
-		}
+	img{
+		max-width: 300px;
+		width: 100%;
+	}
+	.floatleft{
+		float: left;
+		margin: 0 20px 20px 0;
+	}
+	.floatright{
+		float: right;
+		margin: 20px 0 0 20px;
+	}
+	.rowcontainer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-flow: wrap;
+		box-sizing: border-box;
+		margin: 20px;
+	}
+	.element{
+		width: 45%;
+	}
 	</style>
 </head>
 <body id="modern">
-	<div class="content container">
-		<h1>Modern Day</h1>
-		<div>
-			<p class="emph">
-				Where in the world is Frida Kahlo? These days, the answer is: almost anywhere you can imagine.
-			</p>
-			<p>
-				María Luisa Parra-Velasco, a Spanish language professor at Harvard, has an assignment that she gives to some of her students. “I ask them to go out into their communities and find Frida Kahlo,” she says. The exercise is part of an online Harvard Extension course that she launched last year, titled “Frida Kahlo’s Mexico.” They share their discoveries over a web portal from countries as far away as South Africa and Brazil—vials of nail polish; lip glosses; snapshots of Kahlo-themed cafés, restaurants, and street murals; bars of soap; posters; and other miscellaneous items. All exhibit the Mexican artist’s world-famous features: hair braided into a crown atop her head and adorned with colorful flowers, a proud monobrow, and a defiant gaze.
-			</p>
-			<p>
-				What is now affectionately known as “Fridamania” has been on the rise for several decades. And the artist’s image has materialized with particular frequency in 2017, in increasingly diverse forms and mediums. There was a Frida lookalike mob organized by the Dallas Museum of Art on the occasion of Kahlo’s 110th birthday, for which they attempted a Guinness World Record for the most-ever Fridas, numbering an estimated 1,100 (the record is currently pending approval); a set of Frida emoji that iPhone users can employ as emotional surrogates; a new Frida Kahlo Museum near Cancun, an institution that contains no original artworks, but offers a Kahlo “experience,” and is connected to a restaurant where projections of the artist’s face appear on your dinner plate; and, somewhat horrifyingly to those protective of her legacy (and familiar with current European politics), in the form of a bracelet decorated with Kahlo’s visage, worn by British prime minister Theresa May during her catastrophic Conservative party speech earlier this year, apparently to communicate that May, like Kahlo, is a woman of the people.
-			</p>
-			<div class="rowcontainer">
-				<div class="element imgcontainer">
-				  <img src="imgs/modern1.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Frida Khalo socks<br />Photo by @wglosangeles, via Instagram</div>
-				  </div>
-				</div>
-				<div class="element imgcontainer">
-				  <img src="imgs/modern2.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Frida Kahlo  MALBA</div>
-				  </div>
-				</div>
-				<div class="element imgcontainer">
-				  <img src="imgs/modern3.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Frida Kahlo nail polish<br />Photo by @pazmorada, via Instagram</div>
-				  </div>
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<div id="navbar">
+		<a href="home.html">MAIN</a>
+		<a href="bio.html">BIOGRAPHY</a>
+		<a href="paint.html">PAINTING</a>
+		<a href="modern.html">MODERN DAYS</a>
+	</div>
+	<div class="menu" id="home_">
+		<a href="home.html">FRIDA KAHLO</a>
+	</div>
+	<div class="menu" id="bio_">
+		<a href="bio.html">BIOGRAPHY</a>
+	</div>
+	<div class="menu" id="paint_">
+		<a href="paint.html">PAINTING</a>
+	</div>
+	<div class="menu selected" id="modern_">
+		<a href="modern.html">MODERN DAYS</a>
+	</div>
+
+	<div class="content">
+		<p class="emphasis">
+			Where in the world is Frida Kahlo? These days, the answer is: almost anywhere you can imagine.
+		</p>
+		<div class="imgcontainer floatleft">
+			<img src="imgs/modern2.jpg" class="image">
+			<div class="overlay">
+				<div class="text">Frida Kahlo  MALBA</div>
+			</div>
+		</div>
+		<span>Fifty years after her death, Frida Kahlo's life and work has inspired over 65,000 Web sites, numerous one-woman shows and art exhibits and even fashion designs. Reproductions of her artwork can be found on mouse pads, furniture and clocks. In 2001, the U.S. Postal Service placed her image on a 34-cent stamp, making her the first Hispanic woman to receive such an honor. All but ignored as an artist during her lifetime, Frida is now studied, analyzed and idealized.</span>
+		<br /><br />
+		<span>"Fridamania" started in the 1990s and was pushed along by the release of the motion picture Frida (2002). Her life seemed made for Hollywood, and Hayden Herrera's heartbreaking, yet captivating, biography of the artist created devotees. As Stephanie Mencimer wrote in "The Trouble with Frida Kahlo" for the Washington Monthly (June 2002), "Fridamaniacs are inspired by Kahlo's tragic tale of physical suffering – polio at 6, grisly accident at 18 – and fascinated with her glamorous friends and lovers."</span>
+		<br /><br />
+		<span>There is no doubt the flamboyant (albeit scarred) life of Frida attracts fans. To focus on the life and neglect the work, however, explains only part of the Frida craze.</span>
+		<br />
+		<div class="rowcontainer">
+			<div class="element imgcontainer">
+				<img src="imgs/modern1.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Frida Khalo socks<br />Photo by @wglosangeles, via Instagram</div>
 				</div>
 			</div>
-
-			<p>
-				This ever-growing fascination with the artist comes amidst a culture of heightened identity politics in the U.S. Since her death in 1954, Kahlo has become a global symbol of resilience against adversity and patriarchal oppression, a feminist icon, and, thanks to her affairs with both men and women, a cult figure in the queer community. Through her dress and her politics, Kahlo aligned herself with Central America’s marginalized indigenous populations. And her rise to prominence in the popular imagination—through the ’80s and ’90s and on—has coincided with the ascendance of identity politics. All of these factors have contributed to her becoming, as Vanity Fair noted sardonically in 1995, “a politically correct heroine for every wounded minority.”
-			</p>
-			<p>
-				To some observers, the pervasiveness of Kahlo’s image (and its related commercial appeal) would have amused and pleased the artist. She wanted to be seen. She painted herself, repeatedly—sometimes in the guise of a saint or martyr, as in The Broken Column (1944), which shows her suspended over an open landscape, her body fractured down the middle and peppered with nails, an allusion to the many surgeries she would undergo following a childhood accident. Her clothing, collected from various indigenous peoples, including the Tehuantepec in Southern Mexico, was not only unconventional for someone of her privileged upbringing (she was the daughter of a German Jewish immigrant father and a Mexican-born mother), but designed to make a political statement.
-			</p>
-			<p>
-				For others, Kahlo’s transformation into a global brand has come at a cost. Adriana Zavala, a scholar of Latin American art at Tufts University and a curator of Kahlo’s 2015 exhibition at the New York Botanical Garden sees the ubiquity of Kahlo paraphernalia as having contributed to a three-decade watering down in the understanding of the Mexican artist’s contribution to art history. “The Theresa May instance is so interesting,” said Zavala, in that the cooptation of Kahlo’s image by a politician whose party favors business and a shrunken welfare state illustrates “how the popular perception of Kahlo is so distant from who she was as a political person, as a member of the avant-garde.”
-			</p>
-			<p class="emph">
-			The cult of Frida Kahlo, and the widespread commercial use of her image, is a phenomenon that has taken on a life of its own.
-			</p>
-			<div class="rowcontainer">
-				<div class="element imgcontainer">
-				  <img src="imgs/modern4.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Frida Khalo's painting printed shirt<br />Photo by @1964threads, via Instagram</div>
-				  </div>
-				</div>
-				<div class="element imgcontainer">
-				  <img src="imgs/modern5.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Frida's visage on shoes<br />Photo by @mr.pinnot, via Instagram</div>
-				  </div>
-				</div>
-				<div class="element imgcontainer">
-				  <img src="imgs/modern6.jpg" class="image">
-				  <div class="overlay">
-				    <div class="text">Frida Khalo Street Murals<br />Photo by @kiaralouise19, via Instagram</div>
-				  </div>
+			<div class="element imgcontainer">
+				<img src="imgs/modern3.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Frida Kahlo nail polish<br />Photo by @pazmorada, via Instagram</div>
 				</div>
 			</div>
-			<p>
-				Of course, there’s no way to know for certain whether Kahlo’s legacy is being sold out by companies deploying her image, or whether a Kahlo-branded nail polish is a gateway to political awakening. Parra-Velasco addresses the long-term impact of Kahlo’s commodification in her online course, but said the jury is still out. “We don’t really know what the effect is yet,” she said. “What I see is people buying these things as a way of buying something of Frida, who they know they like. It would be even better if, after buying that thing, they get intrigued about who Frida was, and where she came from—what her legacy is as an artist and as a woman. That would be a wonderful route, right?”
-			</p>
-			<p>
-				Whatever one’s opinion, it’s clear that the cult of Frida Kahlo, and the widespread commercial use of her image, is a phenomenon that has taken on a life of its own—quite separate from the body of work she left behind.
-			</p>
 		</div>
-	</div>
-	<div id="menu">
-		<div>
-			<span><a href="home.html">Home</a></span>
-			<span><a href="bio.html">Biography</a></span>
-			<span><a href="paint.html">Paintings</a></span>
-			<span class="selected" id="modern_menu"><a href="modern.html">Modern Day</a></span>
+		<br />
+		<span>In an age of liposuction, face-lifts and hair removal, there's something refreshing and liberating in coming to know a woman who flaunts the "defects" most women try to cover up. A significant portion of Frida's work is self-portraits, and her unibrow and mustached upper lip peer out defiantly from the tin sheets on which she painted. Below the surface of her "take me as I am" attitude, however, lurked larger issues, and depending on the viewer, the issues can differ.</span>
+		<br /><br />
+		<span>To her countrymen, she kept their history alive and portrayed a true vision of Mexico. Frida grew up at a time when Mexico was in the throes of a revolution, seeking to find its own identity. By the time the turmoil ended, the Mexican people embraced a heritage of mixed cultures – European, Indian and Spanish, to name just a few. The paintings of Frida celebrated this cross-cultural identity. The long history of Mexico also tugged at Frida's soul and her paintings became a connecting thread, tying the times in which she lived to the Aztec past. To art historian Victor Zamudio-Taylor, she has become "a model for Mexican Americans and Hispanics in the United States because she nurtures a sense of who [we] are and of a long history and of continuities."</span>
+		<br /><br />
+		<div class="imgcontainer floatright">
+			<img src="imgs/modern6.jpg" class="image">
+			<div class="overlay">
+				<div class="text">Frida Khalo Street Murals<br />Photo by @kiaralouise19, via Instagram</div>
+			</div>
 		</div>
-	</div>
-	<div id="modern-menu-fill">
-
+		<span>To other admirers Frida is the poster child for sorrow – and resiliency. All but a few of her paintings are small in size (many no bigger than 15" x 10") and yet they portray grandiose scenes of death, pain and suffering. Since these themes are universal, Frida has become an artist to whom we can all relate.</span>
+		<br /><br />
+		<span>Frida found a way of painting pain – of permitting us to see pain and in so doing, reflecting the pain of the world. … She is a figure that represents the conquest of adversity, that represents how – against hell and high water – a person is able to make their life and reinvent themselves and make that life be personally fulfilling... Frida Kahlo in that sense is a symbol of hope, of power, of empowerment, for a variety of sectors of our population who are undergoing adverse conditions.</span>
+		<br /><br />
+		<span>According to Taylor, Frida is "a sponge." She absorbs different desires, ideas and impulses for every person who sees her paintings. She could have done this at any time in history; however, the salience of her work continues to grow, because her biography has become well known. Some have said her tragic life made Frida an artist; it may also have made her an icon for our time. But without her work, Frida would not be able to speak to later generations. The life and work are inseparable. Like the pantheon of other artists, she attracts our interest because the art and persona are melded.</span>
+		<br /><br />
+		<span>To admirers, like Fuentes, the reason for her current rise to fame doesn't matter. "Whatever the reasons for her present popularity, the basic fact is that a great artist has been recognized worldwide. I think she's even on matchboxes now, yes?"</span>
+		<div class="rowcontainer">
+			<div class="element imgcontainer">
+				<img src="imgs/modern4.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Frida Khalo's painting printed shirt<br />Photo by @1964threads, via Instagram</div>
+				</div>
+			</div>
+			<div class="element imgcontainer">
+				<img src="imgs/modern5.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Frida's visage on shoes<br />Photo by @mr.pinnot, via Instagram</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

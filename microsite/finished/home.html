@@ -6,57 +6,59 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<style>
-	p{
-		width: 98%;
-	}
-	p:first-of-type{
-		color: rgb(122, 122, 122);
-		font-size: 1.5rem;
-		font-style: italic;
-		margin: 2rem 0 2rem 0;
-	}
 	img{
-		width: 90%;
-		padding-top: 10px;
-		padding-left: 10%;
+		max-width: 350px;
+		margin: auto;
+		display: block;
+		margin: auto;
+		margin-bottom: 50px;
 	}
-	.element{
-		vertical-align: top;
-		margin: 0;
-		width: 50%;
-		overflow-y: scroll;
-		height: 70vh;
+	.emphasis{
+		text-align: center;
 	}
 	</style>
 </head>
 <body id="home">
-	<div class="content container">
-		<div class="element">
-			<h1>Frida Kahlo</h1>
-			<p>
-				Frida Kahlo de Rivera was a Mexican artist who painted many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico.
-			</p>
-			<p>
-				Mexican artist Frida Kahlo is remembered for her self-portraits, pain and passion, and bold, vibrant colors. She is celebrated in Mexico for her attention to Mexican and indigenous culture and by feminists for her depiction of the female experience and form. 
-			</p>
-			<p>
-				During her life, self portrait is a subject that Frida Kahlo always returns to, as artists have always returned to beloved themes - Vincent van Gogh his Sun Flowers, Paul Cezanne his Apples, and Claude Monet his Water Lilies.
-			</p>
-		</div>
-		<div class="element">
-			<img src="imgs/home.jpg" />
-		</div>
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<div id="navbar">
+		<a href="home.html">MAIN</a>
+		<a href="bio.html">BIOGRAPHY</a>
+		<a href="paint.html">PAINTING</a>
+		<a href="modern.html">MODERN DAYS</a>
 	</div>
-	<div id="menu">
-		<div>
-			<span class="selected" id="home_menu"><a href="home.html">Home</a></span>
-			<span><a href="bio.html">Biography</a></span>
-			<span><a href="paint.html">Paintings</a></span>
-			<span><a href="modern.html">Modern Day</a></span>
-		</div>
+	<div id="navbar">
+		<a href="#home">Home</a>
+		<a href="#news">News</a>
+		<a href="#contact">Contact</a>
 	</div>
-	<div id="home-menu-fill">
+	<div class="menu" id="home_">
+		<a href="home.html">FRIDA KAHLO</a>
+	</div>
+	<div class="menu" id="bio_">
+		<a href="bio.html">BIOGRAPHY</a>
+	</div>
+	<div class="menu" id="paint_">
+		<a href="paint.html">PAINTING</a>
+	</div>
+	<div class="menu" id="modern_">
+		<a href="modern.html">MODERN DAYS</a>
+	</div>
 
+	<!----------------------------->
+	<div class="content">
+		<img src="imgs/home.jpg" />
+		<p class="emphasis">
+			Frida Kahlo de Rivera was a Mexican artist who painted many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico.
+		</p>
+		<div class="col_p">
+			<div class="col">
+				Mexican artist Frida Kahlo is remembered for her self-portraits, pain and passion, and bold, vibrant colors. She is celebrated in Mexico for her attention to Mexican and indigenous culture and by feminists for her depiction of the female experience and form. During her life, self portrait is a subject that Frida Kahlo always returns to, as artists have always returned to beloved themes - Vincent van Gogh his Sun Flowers, Paul Cezanne his Apples, and Claude Monet his Water Lilies.
+			</div><!--
+			--><div class="col">
+			Fifty years after her death, Frida Kahlo's life and work has inspired over 65,000 Web sites, numerous one-woman shows and art exhibits and even fashion designs. Reproductions of her artwork can be found on mouse pads, furniture and clocks. In 2001, the U.S. Postal Service placed her image on a 34-cent stamp, making her the first Hispanic woman to receive such an honor. All but ignored as an artist during her lifetime, Frida is now studied, analyzed and idealized.
+		</div>
 	</div>
+
+</div>
 </body>
 </html>
