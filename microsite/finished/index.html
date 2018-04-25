@@ -6,117 +6,59 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<style>
-	#index .container{
-		width: 80%;
+	img{
+		max-width: 350px;
 		margin: auto;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -60%);
-		animation: pulldown 1.5s;
-		min-width: 1024px;
+		display: block;
+		margin: auto;
+		margin-bottom: 50px;
 	}
-	@keyframes pulldown{
-		from{
-			top: -50%;
-		}
-		to{
-			top: 50%;
-		}
-	}
-	#index .element{
-		width: 50%;
-		margin-bottom: 0;
-		vertical-align: bottom;
-	}
-	#index img{
-		width: 70%;
-		margin-left: 10%;
-	}
-	#index h1{
-		text-align: right;
-		font-size: 5rem;
-		margin: 0;
-		padding: 0;
-	}
-	#index h2{
-		margin: 0;
-		padding: 0;
-		text-align: right;
-		font-size: 3rem;
-		font-weight: 400;
-		color: rgb(116, 116, 116);
-	}
-	#index p{
-		font-family: 'Montserrat', sans-serif !important;
-		font-weight: 400;
+	.emphasis{
 		text-align: center;
-		margin: 0;
-	}
-	#index #carrot{
-		transform: rotate(180deg);
-	}
-	#learnmore{
-		position: absolute;
-		bottom: 10%;
-		left: 50%;
-		transform: translate(-50%);
-		color: rgb(153, 151, 151);
-		opacity: 0;
-		text-shadow: 4px 4px 12px rgba(150, 150, 150, 0.5);
-		animation: fadein 2.5s;
-		animation-delay: 1s;
-		animation-fill-mode: forwards;
-	}
-	#learnmore:hover{
-		text-shadow: 4px 4px 12px rgba(65, 65, 65, 0.6);
-	}
-	@keyframes fadein {
-		from { opacity: 0; }
-		to   { opacity: 1; }
-	}
-	@media screen and (max-width: 900px){
-		#index .container{
-			display: flex;
-			flex-direction: column;
-		}
-		#index .element{
-			margin: auto;
-			width: 50%;
-		}
-		#index .element>h1{
-			text-align: center;
-			font-size: 3rem;
-		}
-		#index .element>h2{
-			text-align: center;
-			font-size: 2rem;
-			font-weight: 400;
-			margin-bottom: 20px;
-		}
-		#index .element>img{
-			margin: auto;
-			width: 60%;
-			display: block;
-		}
 	}
 	</style>
 </head>
-<body id="index">
-	<div class="container">
-		<div class="element">
-			<h1>Frida Kahlo</h1>
-			<h2>Understanding Frida then and now</h2>
-		</div><!--
-		--><div class="element">
-			<img src="imgs/index.jpg" />
+<body id="home">
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<div id="navbar">
+		<a href="index.html">MAIN</a>
+		<a href="bio.html">BIOGRAPHY</a>
+		<a href="paint.html">PAINTING</a>
+		<a href="modern.html">MODERN DAYS</a>
+	</div>
+	<div id="navbar">
+		<a href="#home">Home</a>
+		<a href="#news">News</a>
+		<a href="#contact">Contact</a>
+	</div>
+	<div class="menu" id="home_">
+		<a href="index.html">FRIDA KAHLO</a>
+	</div>
+	<div class="menu" id="bio_">
+		<a href="bio.html">BIOGRAPHY</a>
+	</div>
+	<div class="menu" id="paint_">
+		<a href="paint.html">PAINTING</a>
+	</div>
+	<div class="menu" id="modern_">
+		<a href="modern.html">MODERN DAYS</a>
+	</div>
+
+	<!----------------------------->
+	<div class="content">
+		<img src="imgs/home.jpg" />
+		<p class="emphasis">
+			Frida Kahlo de Rivera was a Mexican artist who painted many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico.
+		</p>
+		<div class="col_p">
+			<div class="col">
+				Mexican artist Frida Kahlo is remembered for her self-portraits, pain and passion, and bold, vibrant colors. She is celebrated in Mexico for her attention to Mexican and indigenous culture and by feminists for her depiction of the female experience and form. During her life, self portrait is a subject that Frida Kahlo always returns to, as artists have always returned to beloved themes - Vincent van Gogh his Sun Flowers, Paul Cezanne his Apples, and Claude Monet his Water Lilies.
+			</div><!--
+			--><div class="col">
+			Fifty years after her death, Frida Kahlo's life and work has inspired over 65,000 Web sites, numerous one-woman shows and art exhibits and even fashion designs. Reproductions of her artwork can be found on mouse pads, furniture and clocks. In 2001, the U.S. Postal Service placed her image on a 34-cent stamp, making her the first Hispanic woman to receive such an honor. All but ignored as an artist during her lifetime, Frida is now studied, analyzed and idealized.
 		</div>
 	</div>
-	<div id="learnmore">
-		<a href="home.html">
-			<p>Learn More</p>
-			<p id="carrot">^</p>
-		</a>
-	</div>
+
+</div>
 </body>
 </html>
